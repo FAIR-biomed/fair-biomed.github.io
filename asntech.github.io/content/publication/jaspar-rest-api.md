@@ -6,8 +6,8 @@ date = "2017-12-15"
 image_preview = ""
 math = true
 publication_types = ["1"]
-publication = "Bioinformatics, btx804; doi: https://doi.org/10.1093/bioinformatics/btx804"
-publication_short = "In *Bioinformatics*"
+publication = "Bioinformatics, 34(9):1612-1614; doi: https://doi.org/10.1093/bioinformatics/btx804"
+publication_short = "*Bioinformatics*, 34(9):1612-1614"
 #selected = true
 title = "JASPAR RESTful API: accessing JASPAR data from any programming language"
 url_code = "https://bitbucket.org/CBGR/jaspar"
@@ -15,6 +15,7 @@ url_pdf = "https://www.biorxiv.org/content/early/2017/12/14/160184.full.pdf"
 url_project = "project/jaspar-rest-api/"
 doi = "10.1101/160184"
 #url_slides = "#"
+url_preprint = "https://doi.org/10.1101/160184"
 
 [[url_custom]]
 name = "Demo site"

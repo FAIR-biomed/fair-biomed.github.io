@@ -6,7 +6,7 @@ date = "2016-04-27"
 title = "dbSUPER"
 
 # Project summary to display on homepage.
-summary = "dbSUPER is the first integrated and interactive database of super-enhancers with diverse features."
+summary = "The first integrated and interactive database of super-enhancers."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "dbsuper.png"

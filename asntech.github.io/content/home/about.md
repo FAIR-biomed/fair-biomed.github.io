@@ -13,10 +13,10 @@ weight = 1
 [interests]
   interests = [
     "Bioinformatics",
-    "Computational Biology",
-    "Machine Learning",
-    "Regulatory Genomics and Epigenomics",
-    "Gene Regulation"
+    "Computational biology",
+    "Machine learning",
+    "Regulatory genomics and epigenomics",
+    "Gene regulation"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -37,8 +37,6 @@ weight = 1
  
 +++
 
-Aziz Khan is a postdoctoral research fellow at the Centre for Molecular Medicine Norway (NCMM), University of Oslo, Norway.
+I'm a postdoctoral fellow at the Centre for Molecular Medicine Norway (NCMM), University of Oslo, Norway. My primary research interests are gene regulation, computational biology, machine learning and integrative analysis of high throughput sequencing data with an emphasis on regulatory genomics and epigenomics. The main focus of my research is to develop computational methods and resources for integrative analysis of heterogeneous high-throughput sequencing data to understand the transcriptional and epigenetic control of gene regulation in development and disease.
 
-His primary research interests are bioinformatics, computational biology, machine learning and integrative analysis of high throughput sequencing data with an emphasis on regulatory genomics and epigenomics. The main focus of his recent research has been to develop computational tools and resources, and to perform integrative analysis, to understand transcriptional gene regulation. His long-term research goal is to develop computational methods and tools for integrative analysis of heterogeneous, high-throughput sequencing data to understand the transcriptional and epigenetic control of gene regulation in development and disease.
-
-Apart from research, he is a strong advocate of open science, open source, open access, and the use of social media in research as a way to advance research more broadly.
+Apart from research, I am a strong advocate of open science, open source, open access, preprints, reproducible research, and the use of social media in research as a way to advance research more broadly. I post [preprints](https://www.biorxiv.org/search/author1%3AAziz%2BKhan%20jcode%3Abiorxiv%20numresults%3A10%20sort%3Arelevance-rank%20format_result%3Astandard), publish [open access](https://profiles.impactstory.org/u/0000-0002-6459-6224), share code freely on [GitHub](https://github.com/asntech/), and [tweet](https://twitter.com/khanaziz84) about it.

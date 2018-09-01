@@ -6,14 +6,15 @@ date = "2016-01-04"
 image_preview = ""
 math = true
 publication_types = ["1"]
-publication = "Nucleic Acids Res (2016) 44 (D1): D164-D171. DOI: https://doi.org/10.1093/nar/gkv1002"
-publication_short = "In *Nucleic Acids Res*"
+publication = "Nucleic Acids Res (2016) 44(D1): D164-D171. DOI: https://doi.org/10.1093/nar/gkv1002"
+publication_short = "*Nucleic Acids Res*, 44(D1): D164-D171"
 doi = "10.1093/nar/gkv1002"
 selected = false
 title = "dbSUPER: a database of super-enhancers in mouse and human genome"
 url_code = ""
 url_pdf = "https://academic.oup.com/nar/article-pdf/44/D1/D164/14127093/gkv1002.pdf"
 url_project = "project/dbSUPER/"
+url_preprint = "https://www.biorxiv.org/content/early/2015/08/22/014803"
 
 [[url_custom]]
 name = "Database"

@@ -7,10 +7,12 @@ image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "bioRxiv 2017; doi: https://doi.org/10.1101/105262"
-publication_short = "In *bioRxiv*"
+publication_short = "*bioRxiv*"
 selected = false
 title = "Integrative analysis reveals genomic and epigenomic signatures of super-enhancers and its constituents"
 url_pdf = "https://www.biorxiv.org/content/early/2017/12/27/105262.full.pdf"
+url_preprint = "https://doi.org/10.1101/105262"
+doi = "10.1101/105262"
 #url_project = "project/deep-learning/"
 
 #[[url_custom]]

@@ -4,7 +4,7 @@ title = "Integration of ChIP-seq and machine learning reveals super-enhancers an
 abstract = ""
 abstract_short = ""
 event = "Synthetic Biology Workshops, Tsinghua University"
-event_url = "#"
+event_url = ""
 location = "Beijing, China"
 
 selected = false

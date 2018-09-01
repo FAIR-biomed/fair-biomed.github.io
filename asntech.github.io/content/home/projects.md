@@ -5,8 +5,8 @@
 date = "2016-04-20T00:00:00"
 draft = false
 
-title = "Projects"
-subtitle = ""
+title = "Softwares"
+subtitle = "Softwares and resources"
 widget = "projects"
 
 # Order that this section will appear in.
@@ -26,7 +26,7 @@ view = 1
   tag = "*"
   
 [[filter]]
-  name = "Tools"
+  name = "Software"
   tag = ".tool"
 
 [[filter]]
@@ -36,6 +36,10 @@ view = 1
 [[filter]]
   name = "API"
   tag = ".API"
+
+[[filter]]
+  name = "Web App"
+  tag = ".web-app"
 
 +++
 

@@ -4,7 +4,7 @@ publishDir = "public"
 #publishDir = "docs"
 
 title = "Aziz Khan"
-copyright = "&copy; 2017 Aziz Khan"
+copyright = "&copy; 2018 Aziz Khan"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -26,7 +26,7 @@ defaultContentLanguageInSubdir = false
   name = "Aziz Khan, PhD"
   role = "Postdoctoral Research Fellow"
   organization = "NCMM, University of Oslo"
-  organization_url = ""
+  organization_url = "http://www.med.uio.no/ncmm/english/"
   avatar = "azizk.jpg"
   email = "aziz.khan@ncmm.uio.no"
   address = "Oslo Science Park, Gaustadalléen 21, 0349 Oslo"
@@ -102,9 +102,9 @@ defaultContentLanguageInSubdir = false
     'Uncategorized',  # 0
     'Journal',  # 1
     'Preprint',  # 2
-    'Conference',  # 2
+    'Conference',  # 3
     'Work in progress',  # 3
-    'Technical report',  # 4
+    'Technical report',  # 5
     'Book',  # 5
     'Book chapter'  # 6
   ]
@@ -128,9 +128,9 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:aziz.khan@ncmm.uio.no"
+    icon = "orcid"
+    icon_pack = "ai"
+    link = "https://orcid.org/0000-0002-6459-6224"
 
   [[params.social]]
     icon = "twitter"
@@ -138,24 +138,30 @@ defaultContentLanguageInSubdir = false
     link = "//twitter.com/khanaziz84"
 
   [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.com/citations?hl=en&user=m23RfrcAAAAJ"
-
-  [[params.social]]
     icon = "researchgate"
     icon_pack = "ai"
     link = "https://www.researchgate.net/profile/Aziz_Khan"
 
   [[params.social]]
+    icon = "impactstory"
+    icon_pack = "ai"
+    link = "https://profiles.impactstory.org/u/0000-0002-6459-6224/"
+
+  [[params.social]]
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/asntech"
+  
+  [[params.social]]
+    icon = "publons-square"
+    icon_pack = "ai"
+    link = "https://publons.com/a/382123/"
 
   [[params.social]]
-    icon = "file-pdf-o"
-    icon_pack = "fa"
+    icon = "cv-square"
+    icon_pack = "ai"
     link = "https://asntech.github.io/AzizKhan_CV.pdf"
+
 
 
 # Navigation Links
@@ -170,11 +176,16 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Publications"
-  url = "#publications_selected"
+  url = "#publications"
   weight = 2
 
 [[menu.main]]
-  name = "Projects"
+  name = "Talks & Posters"
+  url = "#conferences"
+  weight = 2
+
+[[menu.main]]
+  name = "Softwares"
   url = "#projects"
   weight = 3
 
