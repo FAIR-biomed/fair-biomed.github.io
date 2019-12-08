@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAIR-biomed is a browser extension for accessing open data resources in the biomedical domain">
+    
+    
+    <link rel="img/favicon.ico">
+
+    
+    <title>Home - FAIR-biomed</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+    <link href="css/highlight.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href=".">FAIR-biomed</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="install/">Install</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="plugins/">Plugins</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contributing/">Contribute</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="privacy/">Privacy</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="install/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/FAIR-biomed/FAIR-biomed/edit/master/docs/index.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#about">About</a></li>
+        <li class="first-level "><a href="#data-sources">Data sources</a></li>
+        <li class="first-level "><a href="#practical-guide">Practical guide</a></li>
+            <li class="second-level"><a href="#installation">Installation</a></li>
+                
+            <li class="second-level"><a href="#local-urls">Local URLs</a></li>
+                
+            <li class="second-level"><a href="#options">Options</a></li>
+                
+            <li class="second-level"><a href="#privacy">Privacy</a></li>
+                
+        <li class="first-level "><a href="#in-the-news">In the news</a></li>
+        <li class="first-level "><a href="#notes-and-references">Notes and References</a></li>
+        <li class="first-level "><a href="#get-involved">Get involved</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1>FAIR-biomed <small>a browser extension for accessing open biomed data</small></h1>
+
+<p><a href="https://chrome.google.com/webstore/detail/fair-biomed/kaacnnmpcdbebmkbcddpckgpgphhcdhn"><img align="right" src="img/ChromeWebStore_Badge_v2_206x58.png"></a></p>
+<p><strong>FAIR</strong>-biomed helps to access open biomedical data resources from any web page.</p>
+<h2 id="about">About</h2>
+<p>Vasts amounts of biomedical data are stored in open databases and knowledge-bases. Data in these resources are intended to be findable, accessible, interoperable, and reusable (<a href="https://www.nature.com/articles/sdata201618">FAIR</a>). However, the data is distributed across many resources and integrating relevant parts within a specific project can be a challenge.</p>
+<p>FAIR-biomed brings open data resources directly to specific research situations. Consider, for example, reading a report in the browser. With FAIR-biomed, you can access additional information on any part of the report without leaving the page.</p>
+<p>To make use of the extension, first highlight some text, for example, a gene name. Press <code>Ctr+Shift+Z</code> on the keyboard (alternatively <code>right-click &gt; FAIR-biomed search</code> with the mouse). A new box should appear prompting you to choose a data source to query. </p>
+<p align="center">
+<img src="img/bmp4_list.png" width="310">
+</p>
+
+<p>Clicking on one of the options triggers a query to the corresponding data service and displays a summary of results.</p>
+<p align="center">
+<img src="img/bmp4_europepmc.png" width="310">
+<img src="img/spacer.png" width="16px">
+<img src="img/bmp4_uniprot.png" width="310">
+</p>
+
+<p>Search results provide summaries of the data resource, details of how the data query was executed, and a link to further data.</p>
+<h2 id="data-sources">Data sources</h2>
+<p>The FAIR-biomed app is composed of core components and a library of plugins. Each of the plugins provides access to a data resource and a specific query type.</p>
+<p>The current plugin library provides access to a varied set of data sources.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Data source</th>
+<th align="left">Plugins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.clinicalgenome.org/">ClinGen</a></td>
+<td align="left">Allele registry</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.ebi.ac.uk/">EBI</a></td>
+<td align="left">Identifiers, ontology, GWAS, and chemical data</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.europepmc.org">Europe PMC</a></td>
+<td align="left">Literature</td>
+</tr>
+<tr>
+<td align="left"><a href="http://exac.broadinstitute.org/">ExAC</a></td>
+<td align="left">Genomic variant annotation</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.genomicsengland.co.uk/">Genomics England</a></td>
+<td align="left">PanelApp</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.genenames.org/">HGNC</a></td>
+<td align="left">Gene nomenclature</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.mousephenotype.org">IMPC</a></td>
+<td align="left">Mouse model phenotypes</td>
+</tr>
+<tr>
+<td align="left"><a href="http://jaspar.genereg.net/">JASPAR</a></td>
+<td align="left">Transcription factor binding profiles</td>
+</tr>
+<tr>
+<td align="left"><a href="https://lncipedia.org/">LNCipedia</a></td>
+<td align="left">non-coding RNAs</td>
+</tr>
+<tr>
+<td align="left"><a href="http://marrvel.org/">MARRVEL</a></td>
+<td align="left">Disease associations, gene expression</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></td>
+<td align="left">Literature, gene summaries, significance of genetic variation</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.reactome.org/">Reactome</a></td>
+<td align="left">Pathways</td>
+</tr>
+<tr>
+<td align="left"><a href="https://string-db.org//">STRING</a></td>
+<td align="left">Protein interaction networks</td>
+</tr>
+<tr>
+<td align="left"><a href="https://genome.ucsc.edu/">UCSC</a></td>
+<td align="left">Genomic regions</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.uniprot.org/">Uniprot</a></td>
+<td align="left">Knowledgebase</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.wikimedia.org/">Wikimedia</a></td>
+<td align="left">Encyclopaedia and dictionary</td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-guide">Practical guide</h2>
+<h3 id="installation">Installation</h3>
+<p>The extension is available from the chrome <a href="https://chrome.google.com/webstore/detail/fair-biomed/kaacnnmpcdbebmkbcddpckgpgphhcdhn">web store</a>. Select the extension in the web store, click <code>Add to chrome</code>, and read the information boxes. Once installed, highlight text on a web page and press <code>Ctrl+Shift+Z</code> to perform searches.</p>
+<p>To install the FAIR-biomed extension manually using code from this repository, see the <a href="install/">developer documentation</a></p>
+<h3 id="local-urls">Local URLs</h3>
+<p>The extension is automatically active on all pages that you accesss via urls starting with 'http' or 'https'. You can also use the extension with reports stored on your own computer, but this functionality is disabled by default by the chrome browser. To use this feature, you must enable it manually.</p>
+<ul>
+<li>Select <code>Tools &gt; Extensions</code> from the chrome menus; a new tab should appear listing all your installed extensions</li>
+<li>Find <code>FAIR-biomed</code> and click <code>Details</code>; the view should change and display more details on the extension</li>
+<li>Scroll down to the setting <code>Allow access to file URLs</code> and turn on the switch.</li>
+</ul>
+<h3 id="options">Options</h3>
+<p>The extension has a dedicated page where you can tune which data sources you would like to use. </p>
+<ul>
+<li>Find the FAIR-biomed icon on the browser toolbar (it's usually on the top-right).</li>
+<li>Click on the icon. A popup should appear. Click on the 'cogs' icon to open the Options page.</li>
+</ul>
+<h3 id="privacy">Privacy</h3>
+<p>Once installed, the extension records a small amount of information to personalize its behavior to each user. See the <a href="privacy/">privacy policy</a>. </p>
+<h2 id="in-the-news">In the news</h2>
+<p>FAIR-biomed was featured in the news!</p>
+<ul>
+<li><a href="http://blog.europepmc.org/2019/08/using-europe-pmc-restful-apis.html">Using Europe PMC RESTful APIs</a>, August 20 2019.</li>
+</ul>
+<h2 id="notes-and-references">Notes and References</h2>
+<p>The idea of augmenting web pages with additional information has a long history. </p>
+<ul>
+<li>
+<p><a href="https://scholar.google.co.uk/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Reflect%3A+augmented+browsing+for+the+life+scientist&amp;btnG=">Reflect</a> was an early implementation of a browser extension aimed at biomedical research. This extension sent a whole web-page to a server for annotation.</p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/4510879">Dynamic linking</a> outlined an idea to infer links to specialist sources by scanning the context of web pages.</p>
+</li>
+<li>
+<p><a href="https://www.nature.com/articles/s41592-019-0477-9">GIX</a> described an extension for retrieving information on gene products.</p>
+</li>
+</ul>
+<h2 id="get-involved">Get involved</h2>
+<p>Feedback and contributions are welcome. Please raise an issue in the github repository.</p>
+<p>To incorporate a new data resource or plugin, read how you can <a href="contributing/">contribute</a>.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>FAIR-biomed is licensed under the MIT license<br></small>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-12-08 08:26:07
+-->

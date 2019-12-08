@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAIR-biomed is a browser extension for accessing open data resources in the biomedical domain">
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>Plugins - FAIR-biomed</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">FAIR-biomed</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../install/">Install</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">Plugins</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../contributing/">Contribute</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../privacy/">Privacy</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../install/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../contributing/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/FAIR-biomed/FAIR-biomed/edit/master/docs/plugins.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#plugins">Plugins</a></li>
+            <li class="second-level"><a href="#plugins-as-modules">Plugins as modules</a></li>
+                
+            <li class="second-level"><a href="#auxiliary-files">Auxiliary files</a></li>
+                
+            <li class="second-level"><a href="#testing">Testing</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="plugins">Plugins</h1>
+<p>Plugin definitions are located in subdirectories of <code>library</code>. For example, plugins accessing data from the <a href="https://www.wikimedia.org">Wikimedia foundation</a> are located in <code>library/wikimedia</code>.  To create a new plugin, create new subdirectory with the name of your data source.</p>
+<h2 id="plugins-as-modules">Plugins as modules</h2>
+<p>Plugin definitions consist of javascript files (extension <code>.js</code>) written as modules. Each module is required to define a number of components. </p>
+<p>Static fields:</p>
+<ul>
+<li><code>id</code> - string, a unique identifier for the plugin. This is never seen by the end user, but it is used by the core app.</li>
+<li><code>title</code> - string, a short heading of the plugin. </li>
+<li><code>subtitle</code> - string, a short description.</li>
+<li><code>tags</code> - array of strings, keywords associated with the plugin.</li>
+<li><code>logo</code> - string, name for a logo image file (svg, png, jpg)</li>
+<li><code>info</code> - string, name for a text/html file containing a description of the data source </li>
+</ul>
+<p>Functions:</p>
+<ul>
+<li><code>claim(query)</code> - should return a number [0,1] signaling to what extent the plugin can provide useful information given a query string. Higher numbers give the plugin a higher ranking in the results list.</li>
+<li><code>url(query, index)</code> - should return a url for an API call for the given query string. An integer index can be used if plugins require multiple round-trips to the API (see wikipedia plugin for an example)</li>
+<li><code>process(response, index)</code> - should transform data obtained from an API call into a simple object that can be displayed within the extension's output window. An integer index can be used if plugins require multiple round-trips to the API (see wikipedia for an example).</li>
+<li><code>extenal(query)</code> - should construct a url to a human-readable page holding more information pertaining to a query. </li>
+</ul>
+<p>Note that a plugin directory can contain more than one plugin definition file. However, each file can define only on plugin. </p>
+<p>TO DO - describe output for <code>process()</code></p>
+<h2 id="auxiliary-files">Auxiliary files</h2>
+<p>Plugins require auxiliary data components. Image files (logo) and text files (data source description) must be placed within the same directory as the plugin definition files. </p>
+<h2 id="testing">Testing</h2>
+<p>Testing is carried out at two levels. The first is programmatic testing via unit tests. </p>
+<pre><code>npm run test-plugin library/wikimedia
+</code></pre>
+
+<p>The <code>test-plugin</code> script executes a small number of tests on each plugin, for example checking that each plugin contains the required fields and functions. </p>
+<p>Additional, plugin-specific, tests can be included into the testing framework by adding test files in the plugin folders. These test files must be named as <code>test-[plugin-name].js</code>, see the folder with the wikimedia plugins for an example.</p>
+<p>The second level of testing focuses on getting the plugin to display proper information in the browser. Build a new library incorporating the new plugin. To build the entire library containing all plugins, use the same command as above, <code>npm run build-lib</code>. However, it is also possible to build a library containing just the relevant plugin.</p>
+<pre><code>npm run build-lib library/wikimedia
+</code></pre>
+
+<p>The build script also performs some checks and signals development hints.   After a successful library build, reload the extension in the browser, navigate to a relevant webpage (or refresh an existing tab/window), and manually check whether relevant queries provide the expected output.  </p>
+<p>Note, this manual process is sufficient for simple plugins that do not perform much processing on their API's output. In cases where more extensive processing is required, it is possible to set up dedicated unit tests for each plugin.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>FAIR-biomed is licensed under the MIT license<br></small>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
