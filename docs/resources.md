@@ -5,7 +5,7 @@ permalink: /resources/
 ---
 
 
-The current plugin library provides access to a varied set of data sources.
+The plugin library provides access to a varied set of data sources.
 
 ## Gene-centric resources
 
