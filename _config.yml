@@ -1,0 +1,25 @@
+title: FAIR-biomed
+email: fairext@gmail.com
+description: >-
+  A browser extension.
+baseurl: ""
+url: ""
+twitter_username: FAIR-biomed
+github_username:  FAIR-biomed
+markdown: kramdown
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-last-modified-at
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - .idea/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+
+include:
+  - _includes
+  - index.md

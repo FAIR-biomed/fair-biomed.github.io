@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"">
+    {% include head.html %}
+    <body class="page-content" aria-label="Content" data-spy="scroll" data-target="#toc">
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-3 col-toc">
+                <div class="sticky-top">
+                    <p>
+                        <a href="/" class="plain"><img src="/images/fair-biomed-128.png" width="48">
+                            <span id="fair-brand" class="align-middle">FAIR-biomed</span></a>
+                    </p>
+                    {% include toc.html %}
+                    {% include media.html %}
+                </div>
+            </div>
+            <div class="col-sm-9 col-xl-7 col-lg-9 col-content">
+                <h1 class="title">{{ page.title }}</h1>
+                {{ content }}
+                <div class="end-of-content">
+                <p><a href="{{site.data.github.edit_url}}{{page.path}}"><i class="fa fa-github edit"></i> Edit this page on github</a></p>
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+    </body>
+</html>
