@@ -1,0 +1,24 @@
+general:
+  - link: intro
+    title: Introduction
+  - link: news
+    title: News
+guide:
+  - link: install
+    title: Installation
+  - link: personalization
+    title: Personalization
+  - link: resources
+    title: Resources
+  - link: privacy
+    title: Privacy
+documentation:
+  - link: setup
+    title: Setup
+  - link: core
+    title: Extension core
+  - link: plugins
+    title: Plugins
+misc:
+  - link: references
+    title: References

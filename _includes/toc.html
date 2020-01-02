@@ -2,17 +2,20 @@
     <ul class="nav navbar-nav">
 
         <!-- Introductory material -->
-        {% for chapter in site.data.toc_intro %}
+        {% for chapter in site.data.toc.general %}
             <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
                 <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
             </li>
+            {% if (chapter.title == page.title) and chapter.title != "Introduction" %}
+                <nav id="toc" data-toggle="toc"></nav>
+            {% endif %}
         {% endfor %}
 
         <!-- User's guide -->
         <li class='toc-part toc-space {% if (page.title == "User's guide") %}selected{% endif %}'>
             <a href="/guide/" class="nav-link toc-part">User's guide</a>
         </li>
-        {% for chapter in site.data.toc_user %}
+        {% for chapter in site.data.toc.guide %}
             <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
                 <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
             </li>
@@ -25,11 +28,23 @@
         <li class='toc-part toc-space {% if (page.title == "Documentation") %}selected{% endif %}'>
             <a href="/documentation/" class="nav-link toc-part">Documentation</a>
         </li>
-        {% for chapter in site.data.toc_docs %}
+        {% for chapter in site.data.toc.documentation %}
             <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
                 <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
             </li>
             {% if (chapter.title == page.title) %}<nav id="toc" data-toggle="toc"></nav>{% endif %}
         {% endfor %}
+
+        <!-- Misc items -->
+        {% for chapter in site.data.toc.misc %}
+            <li class='{% if (chapter.title == page.title) %}selected {% endif %}
+                       {% if (chapter.title == "References") %} toc-space {% endif %}'>
+                <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
+            </li>
+            {% if (chapter.title == page.title) %}
+                <nav id="toc" data-toggle="toc"></nav>
+            {% endif %}
+        {% endfor %}
+
     </ul>
 </nav>
