@@ -3,25 +3,25 @@
 
         <!-- Introductory material -->
         {% for chapter in site.data.toc.general %}
-            <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
-                <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
-            </li>
-            {% if (chapter.title == page.title) and chapter.title != "Introduction" %}
-                <nav id="toc" data-toggle="toc"></nav>
-            {% endif %}
+        <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
+            <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
+        </li>
+        {% if (chapter.title == page.title) and chapter.title != "Introduction" %}
+        <nav id="toc" data-toggle="toc"></nav>
+        {% endif %}
         {% endfor %}
 
         <!-- User's guide -->
         <li class='toc-part toc-space {% if (page.title == "User's guide") %}selected{% endif %}'>
-            <a href="/guide/" class="nav-link toc-part">User's guide</a>
+        <a href="/guide/" class="nav-link toc-part">User's guide</a>
         </li>
         {% for chapter in site.data.toc.guide %}
-            <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
-                <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
-            </li>
-            {% if (chapter.title == page.title) and chapter.title != "Privacy" %}
-                <nav id="toc" data-toggle="toc"></nav>
-            {% endif %}
+        <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
+            <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
+        </li>
+        {% if (chapter.title == page.title) and chapter.title != "Privacy" %}
+        <nav id="toc" data-toggle="toc"></nav>
+        {% endif %}
         {% endfor %}
 
         <!-- Developer guide -->
@@ -29,21 +29,21 @@
             <a href="/documentation/" class="nav-link toc-part">Documentation</a>
         </li>
         {% for chapter in site.data.toc.documentation %}
-            <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
-                <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
-            </li>
-            {% if (chapter.title == page.title) %}<nav id="toc" data-toggle="toc"></nav>{% endif %}
+        <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
+            <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
+        </li>
+        {% if (chapter.title == page.title) %}<nav id="toc" data-toggle="toc"></nav>{% endif %}
         {% endfor %}
 
         <!-- Misc items -->
         {% for chapter in site.data.toc.misc %}
-            <li class='{% if (chapter.title == page.title) %}selected {% endif %}
+        <li class='{% if (chapter.title == page.title) %}selected {% endif %}
                        {% if (chapter.title == "References") %} toc-space {% endif %}'>
-                <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
-            </li>
-            {% if (chapter.title == page.title) %}
-                <nav id="toc" data-toggle="toc"></nav>
-            {% endif %}
+            <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
+        </li>
+        {% if (chapter.title == page.title) %}
+        <nav id="toc" data-toggle="toc"></nav>
+        {% endif %}
         {% endfor %}
 
     </ul>

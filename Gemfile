@@ -13,6 +13,7 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 
 gem "github-pages", group: :jekyll_plugins
+gem "faraday", "0.17.3"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

@@ -17,14 +17,14 @@ h2, h3, h4 {
         max-width: 570px;
     }
 }
+@media (min-width: 672px) {
+    .container {
+        max-width: 666px;
+    }
+}
 @media (min-width: 768px) {
     .container {
         max-width: 760px;
-    }
-}
-@media (min-width: 880px) {
-    .container {
-        max-width: 870px;
     }
 }
 @media (min-width: 992px) {
@@ -37,13 +37,23 @@ h2, h3, h4 {
         max-width: 1190px;
     }
 }
-
+div.clear {
+    clear: both;
+}
 
 /** brand **/
 span#fair-brand {
     font-size: 28px;
     col: #222222;
     font-weight: 600;
+}
+.catchphrase {
+    clear: both;
+    line-height: 1.2;
+    color: #343434;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 4px;
 }
 
 
@@ -61,7 +71,10 @@ a:hover {
 div.col-content a {
     color: #22b5bb;
 }
-
+img.center {
+    display: block;
+    margin: 0 auto;
+}
 
 /** Table of contents **/
 li.toc-part {
