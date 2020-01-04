@@ -7,7 +7,7 @@
             <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
         </li>
         {% if (chapter.title == page.title) and chapter.title != "Introduction" %}
-        <nav id="toc" data-toggle="toc"></nav>
+            <nav id="toc" data-toggle="toc"></nav>
         {% endif %}
         {% endfor %}
 
@@ -20,7 +20,7 @@
             <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
         </li>
         {% if (chapter.title == page.title) and chapter.title != "Privacy" %}
-        <nav id="toc" data-toggle="toc"></nav>
+            <nav id="toc" data-toggle="toc"></nav>
         {% endif %}
         {% endfor %}
 
@@ -32,17 +32,19 @@
         <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>
             <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
         </li>
-        {% if (chapter.title == page.title) %}<nav id="toc" data-toggle="toc"></nav>{% endif %}
+        {% if (chapter.title == page.title) %}
+            <nav id="toc" data-toggle="toc"></nav>
+        {% endif %}
         {% endfor %}
 
         <!-- Misc items -->
         {% for chapter in site.data.toc.misc %}
         <li class='{% if (chapter.title == page.title) %}selected {% endif %}
-                       {% if (chapter.title == "References") %} toc-space {% endif %}'>
+                       {% if (chapter.title contains "news") %} toc-space {% endif %}'>
             <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
         </li>
         {% if (chapter.title == page.title) %}
-        <nav id="toc" data-toggle="toc"></nav>
+            <nav id="toc" data-toggle="toc"></nav>
         {% endif %}
         {% endfor %}
 

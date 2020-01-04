@@ -1,5 +1,5 @@
 ---
-title: News
+title: In the news
 layout: doc
 permalink: /news/
 ---

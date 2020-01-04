@@ -1,15 +1,15 @@
 general:
   - link: intro
     title: Introduction
-  - link: news
-    title: News
 guide:
   - link: install
     title: Installation
-  - link: personalization
-    title: Personalization
+  - link: features
+    title: Features
   - link: resources
     title: Resources
+  - link: personalization
+    title: Personalization
   - link: privacy
     title: Privacy
 documentation:
@@ -20,5 +20,7 @@ documentation:
   - link: plugins
     title: Plugins
 misc:
+  - link: news
+    title: In the news
   - link: references
     title: References

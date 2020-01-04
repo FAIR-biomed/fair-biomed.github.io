@@ -208,3 +208,23 @@ div.news-comment {
     font-size: 13px;
     color: #545454;
 }
+
+
+/** Icons **/
+div.features-img {
+    background-color: #22b5bb;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    padding-top: 3px;
+    margin-right: 12px;
+    margin-top: 0.3em;
+}
+div.features-img img {
+    height: 18px;
+}
+
