@@ -76,6 +76,7 @@ img.center {
     margin: 0 auto;
 }
 
+
 /** Table of contents **/
 li.toc-part {
     margin-top: 0;
@@ -168,6 +169,11 @@ div.col-content, div.col-toc {
     color: #404040;
 }
 
+
+/** Tables on content pages **/
+div.col-content td, div.col-content th {
+    padding-right: 1em;
+}
 
 /** Footer **/
 div.end-of-content {
