@@ -10,7 +10,7 @@ permalink: /features/
 There are two ways to trigger the FAIR-biomed popup.
 
 - Select some text on a web page, then press `Ctrl+Shift+Z`.
-- Select some text, use the mouse to right-click, and then select `FAIR-biomed search` from the context menu.
+- Select some text, use the mouse to right-click, then select `FAIR-biomed search` from the context menu.
 
 Both these methods trigger the FAIR-biomed popup, which appears with the selected text in its search box.
 

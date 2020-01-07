@@ -5,20 +5,17 @@ permalink: /core/
 ---
 
 
-The repo source code is organized in distinct parts. 
+FAIR-biomed is designed as a core application with a library of plugins. The source code of the github repository has a small number of directories. 
 
- - documentation - `docs`
- - plugin library - `library`
- - core extension - `src/app`
- - build scripts  - `src/build`
- - tests - `test`
+ - `docs` holds a small number of files used in the repository README. Most of the documentation is maintained in a [separate repository](https://github.com/FAIR-biomed/fair-biomed.github.io).
+ - `library` holds a collection of plugins, each of which interacts with one external data resource. 
+ - `src` holds the source code for the core application. 
+ - `test` holds unit tests for the core application.
  
- Other directories are created during installation and development.
+Other directories are created during installation and development.
  
- - dependencies - `node_modules`
- - browser extension - `dist`
+ - `node_modules` holds third-party javascript/node packages. 
+ - `dist` holds the 'compiled' version of the extension that can be loaded into a browser.   
  
-In order to create or to maintain a plugin, the parts of interest are the `library` and the `test` components. You should be able to install the extension and create a new plugin without accessing the other parts.
-
-
-
+Although all these components are necessary to build the extension, you can create a new plugin by working entirely within the `library` folder and without accessing the parts.
+ 

@@ -175,6 +175,26 @@ div.col-content td, div.col-content th {
     padding-right: 1em;
 }
 
+
+/** Images **/
+img.browser-ad {
+    width: 206px;
+}
+img.screenshot {
+    border: solid 1px #bbbbbb;
+}
+
+/** Code blocks **/
+div.highlight {
+    padding: 0.8em;
+    background-color: #f0f4f5;
+    margin-bottom: 1em;
+}
+pre.highlight {
+    margin: 0;
+}
+
+
 /** Footer **/
 div.end-of-content {
     margin-top: 6em;

@@ -16,7 +16,7 @@ documentation:
   - link: setup
     title: Setup
   - link: core
-    title: Extension core
+    title: Code structure
   - link: plugins
     title: Plugins
 misc:
