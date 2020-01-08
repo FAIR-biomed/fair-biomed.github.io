@@ -6,7 +6,7 @@ permalink: /intro/
 
 Vasts amounts of biomedical data are stored in open databases and knowledge-bases. Data in these resources are intended to be findable, accessible, interoperable, and reusable ([FAIR](https://www.nature.com/articles/sdata201618">FAIR</a>)). However, the data are distributed across many resources and integrating relevant parts within a specific project can be a challenge. FAIR-biomed works inside a web browser to bring a range of open-data resources - on genes, disease, genomic regions, variants - to any web-page.
 
-FAIR-biomed is available as a free extension for Chrome or an add-on for Firefox (coming soon...). 
+FAIR-biomed is available as a free extension for Chrome or an add-on for Firefox. 
 
 <div class="container">
 <div class="row">
@@ -16,7 +16,7 @@ FAIR-biomed is available as a free extension for Chrome or an add-on for Firefox
 </a>
 </div>
 <div class="col-sm-6">
-<a href="https://chrome.google.com/webstore/detail/fair-biomed/kaacnnmpcdbebmkbcddpckgpgphhcdhn">
+<a href="https://addons.mozilla.org/en-GB/firefox/addon/fair-biomed/">
     <img class="center browser-ad" src="../images/firefox_addons.png">
 </a>
 </div>
@@ -26,7 +26,7 @@ FAIR-biomed is available as a free extension for Chrome or an add-on for Firefox
 
 <div class="clear mt-3"></div>
 
-Once installed, the extension is active on all web pages. Highlight some text, for example, a gene name. Press `Ctr+Shift+Z` on the keyboard, or right-click with the mouse and select `FAIR-biomed search`. A box should appear prompting you to choose a data source to query. 
+Once installed, the extension is active on all web pages. Highlight some text, for example, a gene name. Press `Ctr+Shift+Z` on the keyboard, or right-click with the mouse and select `FAIR-biomed search`. A box should appear with suggestions of the biomedical data sources that might have more data pertaining to the highlighted text.
 
 <p align="center">
 <img src="/images/bmp4_list.png" width="300">
