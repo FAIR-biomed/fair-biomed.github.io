@@ -12,7 +12,7 @@ FAIR-biomed is available as a free extension for Chrome or an add-on for Firefox
 <div class="row">
 <div class="col-sm-6">
 <a href="https://chrome.google.com/webstore/detail/fair-biomed/kaacnnmpcdbebmkbcddpckgpgphhcdhn">
-    <img class="center" src="../images/ChromeWebStore_BadgeWBorder_v2_206x58.png">
+    <img class="center browser-ad" src="../images/ChromeWebStore_BadgeWBorder_v2_206x58.png">
 </a>
 </div>
 <div class="col-sm-6">
