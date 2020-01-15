@@ -31,7 +31,17 @@ The idea of augmenting web pages with additional information has a long history.
 
 The implementation of FAIR-biomed relies on several third-party software components.
 
-- The extension relies on development frameworks/tools, [Babel](www.babeljs.io), [React](www.reactjs.org), [mocha](www.mochajs.org), and several other software libraries. The complete list is documented in the source code.
+- The extension relies on several development frameworks and libraries.
+
+   - [babeljs](https://babeljs.io/), 
+   - [browserify](http://browserify.org/)
+   - [fs-extra](https://github.com/jprichardson/node-fs-extra)
+   - [mocha](https://mochajs.org/)
+   - [nyc](https://www.npmjs.com/package/nyc)
+   - [React](https://reactjs.org/)
+   - [sanitize-html](https://www.npmjs.com/package/sanitize-html)
+   - [uglify-es](https://www.npmjs.com/package/uglify-es)
+   - [utf-8](https://www.npmjs.com/package/utf8)
  
 - Icons in the browser extension and on this website are from [fontawesome](https://fontawesome.com/).
  
