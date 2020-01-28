@@ -232,6 +232,7 @@ table.news-table {
 }
 table.news-table td {
     padding-right: 10px;
+    vertical-align: top;
 }
 div.news-comment {
     margin-top: 0.25em;

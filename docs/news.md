@@ -18,7 +18,7 @@ FAIR-biomed was featured in the news!
             {% endif %}
          </td>
         <td>{{item.date}}</td>
-        <td><a href="{{item.link}}">{{item.title}}</a></td>
+        <td><a href="{{item.link}}">{{item.title}}</a><br/>{{item.medium}}</td>
     </tr>
 {% endfor %}
 </table>
