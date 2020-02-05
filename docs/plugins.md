@@ -40,9 +40,9 @@ The primary javascript file must have a `js` extension and hold a javascript mod
  - `claim(query)` determines whether the plugin is displayed in the list of suggestions for a particular query. Here, the input `query` is always a string. The function should return a number [0,1] signaling to what extent the plugin can provide useful information about the query. Higher numbers give the plugin a higher ranking in the results list.
  - `url(query, index)` should construct a URL for an API call for the given query string. An integer index can be used if plugins require multiple round-trips to the API.
  - `process(response, index)` should transform data obtained from an API call into a simple object that can be displayed within the extension's output window. An integer index can be used if plugins require multiple round-trips to the API.
- - `extenal(query)` should construct a url to a human-readable page holding more information pertaining to a query. 
+ - `external(query)` should construct a url to a human-readable page holding more information pertaining to a query. 
 
-Note that a plugin directory can contain more than one plugin definition file. However, each file can define only on plugin. 
+Note that a plugin directory can contain more than one plugin definition file. However, each file can define only one plugin. 
 
 
 
