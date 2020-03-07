@@ -4,9 +4,9 @@ layout: doc
 permalink: /intro/
 ---
 
-Vasts amounts of biomedical data are stored in open databases and knowledge-bases. Data in these resources are intended to be findable, accessible, interoperable, and reusable ([FAIR](https://www.nature.com/articles/sdata201618">FAIR</a>)). However, the data are distributed across many resources and integrating relevant parts within a specific project can be a challenge. FAIR-biomed works inside a web browser to bring a range of open-data resources - on genes, disease, genomic regions, variants - to any web-page.
+Vasts amounts of biomedical data are stored in open databases and knowledge-bases. These resources are intended to provide findable, accessible, interoperable, and reusable information ([FAIR](https://www.nature.com/articles/sdata201618">FAIR</a>)). However, in day-to-day research, finding relevant information can be a challenge, partly because the data are distributed across many resources. 
 
-FAIR-biomed is available as a free extension for Chrome or an add-on for Firefox. 
+FAIR-biomed is a productivity tool that works inside a web browser. It brings a range of open-data resources - on genes, disease, genomic regions, variants - to any web-page. It is available as an extension for Chrome or an add-on for Firefox. 
 
 <div class="container">
 <div class="row">
@@ -17,7 +17,7 @@ FAIR-biomed is available as a free extension for Chrome or an add-on for Firefox
 </div>
 <div class="col-sm-6">
 <a href="https://addons.mozilla.org/en-GB/firefox/addon/fair-biomed/">
-    <img class="center browser-ad" src="../images/firefox_addons.png">
+    <img class="center browser-ad2" src="../images/firefox_addons.png">
 </a>
 </div>
 </div>

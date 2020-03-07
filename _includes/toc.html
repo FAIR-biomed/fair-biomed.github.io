@@ -33,7 +33,7 @@
             <a href="/{{ chapter.link }}/" class="nav-link">{{ chapter.title }}</a>
         </li>
         {% if (chapter.title == page.title) %}
-            {% unless (chapter.title contains "Code") %}
+            {% unless (chapter.title contains "Structure") %}
                 <nav id="toc" data-toggle="toc"></nav>
             {% endunless %}
         {% endif %}

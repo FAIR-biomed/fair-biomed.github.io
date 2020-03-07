@@ -33,7 +33,8 @@ The primary javascript file must have a `js` extension and hold a javascript mod
  - `subtitle` - string, a short description. 
  - `tags` - array of strings, keywords associated with the plugin. 
  - `logo` - string, filename of a logo image file (svg, png, jpg).
- - `info` - string, filename of a text/html file containing a description of the data source 
+ - `info` - string, filename of a text/html file containing a description of the data source
+ - `endpoints` - array of URLs, access points for application programming interfaces (APIs) at the biomedical resources. 
  
 **Functions:**
 
