@@ -76,6 +76,21 @@ npm run build-lib library/wikimedia
 The build script also performs some checks and signals development hints. After a successful library build, reload the extension in the browser, navigate to a relevant page (or refresh an existing tab), and check whether relevant queries provide the expected output.  
 
 
+
+## Shared code
+
+Several plugins perform very similar actions, for example to detect whether
+a query string is a gene symbol, an identifier, or a genomic position. Some
+of these common tasks can be performed via shared libraries. 
+
+Shared libraries / modules are stored under the `library` folder in files that
+begin with an underscore. These can be imported in any plugin.  
+
+ - `_querytools.js` - provides convenience functions to parse query strings
+ and determine if they are gene symbols, identifiers, etc. This library is useful to streamline writing the `claim(query)` function.
+ - `_messages.js` - provides a set of error messages. 
+
+
 ## Examples
 
 Existing plugins in the library folder can be used as templates. The list here contains some plugins that contain certain specific design patterns.

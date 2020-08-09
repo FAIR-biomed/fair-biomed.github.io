@@ -13,7 +13,7 @@
 
         <!-- User's guide -->
         <li class='toc-part toc-space {% if (page.title == "User's guide") %}selected{% endif %}'>
-        <a href="/guide/" class="nav-link toc-part">User's guide</a>
+            <a href="/guide/" class="nav-link toc-part">User's guide</a>
         </li>
         {% for chapter in site.data.toc.guide %}
         <li {% if (chapter.title == page.title) %}class="selected"{% endif %}>

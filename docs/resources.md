@@ -5,7 +5,7 @@ permalink: /resources/
 ---
 
 
-The plugin library provides access to a varied set of data sources.
+The plugin library provides access to diverse databases and data portals.
 
 
 ## Gene-centric
@@ -17,14 +17,16 @@ Gene-centric plugins accept gene symbols as queries. Some of the plugins also ac
 | [Genomics England](https://www.genomicsengland.co.uk/) | PanelApp |
 | [GTeX](https://www.gtexportal.org/) | Gene expression |
 | [HGNC](https://www.genenames.org/) | Gene nomenclature |
+| [HOCOMOCO](https://hocomoco11.autosome.ru/) | Transcription factor binding profiles |
 | [IMPC](https://www.mousephenotype.org) | Mouse model phenotypes |
 | [JASPAR](http://jaspar.genereg.net/) | Transcription factor binding profiles |
 | [LNCipedia](https://lncipedia.org/) | non-coding RNAs | 
 | [MARRVEL](http://marrvel.org/) | Disease associations, gene expression |
-| [NCBI](https://www.ncbi.nlm.nih.gov/) | Gene summaries, significance of genetic variation |
+| [NCBI Gene](https://www.ncbi.nlm.nih.gov/) | Gene summaries |
+| [NCBI ClinVar](https://www.ncbi.nlm.nih.gov/) | Significance of genetic variation |
 | [Reactome](https://www.reactome.org/) | Pathways |
 | [STRING](https://string-db.org//) | Protein interaction networks |
-| [Uniprot](https://www.uniprot.org/) | Knowledgebase |
+| [Uniprot](https://www.uniprot.org/) | Gene knowledgebase |
 
 <div class="news-comment"><i>Note:</i> Resources are listed in alphabetical order.</div>
 
@@ -41,7 +43,8 @@ Genome-centric plugins accept genomic coordinates as inputs.
 | [EBI](https://www.ebi.ac.uk/) | GWAS variants |
 | [Ensembl](https://www.ensembl.org/) | Links to genome browser |
 | [ExAC](http://exac.broadinstitute.org/) | Genomic variant annotation |
-| [NCBI](https://www.ncbi.nlm.nih.gov/) | variant interpretation, polymorphisms |
+| [NCBI ClinVar](https://www.ncbi.nlm.nih.gov/) | variant interpretation |
+| [NCBI dbSNP](https://www.ncbi.nlm.nih.gov/) | polymorphisms |
 | [UCSC](https://genome.ucsc.edu/) | Links to genome browser |
 
 <div class="news-comment"><i>Note:</i> Resources are listed in alphabetical order.</div>
@@ -57,7 +60,8 @@ Certain plugins respond to queries that are neither gene symbols or genomic coor
 | [Europe PMC](https://www.europepmc.org) | Literature search | 
 | [Pubchem](https://pubchem.ncbi.nlm.nih.gov/) | Chemical compounds and drugs |
 | [Pubmed](https://pubmed.ncbi.nlm.nih.gov/) | Literature search |
-| [Wikimedia](https://www.wikimedia.org/) | Encyclopaedia and dictionary |
+| [Wikipedia](https://www.wikipedia.org/) | Encyclopaedia |
+| [Wiktionary](https://www.wiktionary.org/) | Dictionary |
 
 <div class="news-comment"><i>Note:</i> Resources are listed in alphabetical order.</div>
 

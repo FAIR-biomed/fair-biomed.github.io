@@ -18,5 +18,5 @@ Other directories are created during installation and development.
  - `node_modules` holds third-party javascript/node packages. 
  - `dist` holds the 'compiled' version of the extension that can be loaded into a browser.   
  
-Although all these components are necessary to build the extension, you can create a new plugin by working entirely within the `library` folder and without accessing the parts.
+Although all these components are necessary to build the extension, you can create a new plugin by working entirely within the `library` folder and without accessing the other parts.
  

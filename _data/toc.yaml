@@ -12,6 +12,8 @@ guide:
     title: Personalization
   - link: privacy
     title: Privacy
+  - link: questionsanswers
+    title: Questions & answers
 documentation:
   - link: setup
     title: Setup
