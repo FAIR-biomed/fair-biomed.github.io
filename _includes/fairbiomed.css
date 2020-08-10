@@ -15,6 +15,9 @@ h3, h4 {
     margin-top: 1.8em;
     margin-bottom: 0.75em;
 }
+h3 span.question {
+    color: #cc1d32;
+}
 body {
     font-size: 1.05em;
 }

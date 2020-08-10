@@ -81,14 +81,7 @@ The build script also performs some checks and signals development hints. After 
 
 Several plugins perform very similar actions, for example to detect whether
 a query string is a gene symbol, an identifier, or a genomic position. Some
-of these common tasks can be performed via shared libraries. 
-
-Shared libraries / modules are stored under the `library` folder in files that
-begin with an underscore. These can be imported in any plugin.  
-
- - `_querytools.js` - provides convenience functions to parse query strings
- and determine if they are gene symbols, identifiers, etc. This library is useful to streamline writing the `claim(query)` function.
- - `_messages.js` - provides a set of error messages. 
+of these tasks can be performed via a shared library located in `library/_querytools.js`.
 
 
 ## Examples
