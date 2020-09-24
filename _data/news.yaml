@@ -1,18 +1,26 @@
-blog:
+presentations:
+  - link: https://www.youtube.com/watch?v=oamvnwDMEBc
+    title: Katriona Goldman - Turing FAIR
+    date: 24 September 2020
+    medium: Turing Institute
+    tags: [contributor, video]
   - link: https://elifesciences.org/labs/8c7cc651/fair-biomed-on-demand-research-information
     title: "FAIR-biomed: On-demand research information"
     medium: eLife Labs
     date: 27 January 2020
-    tags: contributor
+    tags: [contributor, blog]
   - link: http://blog.europepmc.org/2019/08/using-europe-pmc-restful-apis.html
     title: Using Europe PMC RESTful APIs
     medium: Europe PMC Blog
     date: 20 August 2019
-    tags: ""
+    tags: blog
 social:
+  - link: https://twitter.com/kirstie_j/status/1309065432868032515
+    title: Delighted to attend @_katriona's presentation of FAIR-Biomed
+    date: 24 September 2020
   - link: https://twitter.com/eLifeInnovation/status/1222092706345779200
     title: Find open primary data when reading a paper
-    date: 27 January 2019
+    date: 27 January 2020
   - link: https://twitter.com/khanaziz84/status/1192181413543583744
     title: Spread the word on twitter
     date: 6 November 2019
